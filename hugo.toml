@@ -3,3 +3,17 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 theme = "hugo-blog-awesome"
+
+[module]
+  
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  
+
+  [[module.mounts]]
+    source = "content/Source Material"
+    target = "static/Source Material"
