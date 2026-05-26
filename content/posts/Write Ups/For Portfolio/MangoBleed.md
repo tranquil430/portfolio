@@ -48,9 +48,9 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `CVE-2025-14847`
 * **Evidence:** The documentation detail page outlines a heap memory read vulnerability via mismatched length fields in Zlib compressed protocol headers. This aligns with the custom scanner output, which explicitly flags the target server for `MangoBleed (CVE-2025-14847)`.
 
-![2026-05-18\_221250.png](/ob/Source%20Material/2026-05-18_221250.png)
+![2026-05-18\_221250.png](/portfolio/ob/Source%20Material/2026-05-18_221250.png)
 
-![Pasted image 20260521154935.png](ob/Source%20Material/Pasted%20image%2020260521154935.png)
+![Pasted image 20260521154935.png](/portfolio/ob/Source%20Material/Pasted%20image%2020260521154935.png)
 
 ### **Task 2**
 
